@@ -12,3 +12,6 @@ connectDB()
     .catch(err => {
         console.error("Failed to connect to database:", err);
     });
+
+    const PORT = process.env.PORT || 4400;
+app.listen(PORT);
